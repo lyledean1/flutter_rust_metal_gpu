@@ -1,0 +1,17 @@
+[package]
+name = "rs_devices"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.69"
+metal = { git = "https://github.com/lyledean1/metal-rs" }
+objc = "0.2.7"
+block = "0.1.6"
+cocoa = "0.24.1"
+flutter_rust_bridge = "1.64.0"
+
+[lib]
+crate-type = ["lib", "staticlib", "cdylib"]
